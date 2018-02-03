@@ -3,6 +3,15 @@
 This package contains some handy utility methods that I use in my [hapi.js](https://hapijs.com/)
 (v17) server applications.
 
+## Installation
+
+The package is not in the npm registry (don’t think it’s general-purpose enough), but you can install
+it from GitHub:
+
+```sh
+npm install -S peruukki/hapi-server-utils#v1.0.0
+```
+
 ## Available methods
 
 ### server(routes, config, defaultPort, [staticFilesDir])
