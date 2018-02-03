@@ -1,0 +1,28 @@
+{
+  "name": "hapi-server-utils",
+  "version": "1.0.0",
+  "description": "Common utilities for hapi.js server applications",
+  "private": true,
+  "author": "Harri Lehtola <peruukki@hotmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "scripts": {
+    "lint": "eslint --fix .",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "h2o2": "^8.0.0",
+    "habitat": "^3.1.2",
+    "hapi": "^17.2.0",
+    "hapi-auth-basic": "^5.0.0",
+    "inert": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
