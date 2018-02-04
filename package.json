@@ -18,6 +18,7 @@
     "habitat": "^3.1.2",
     "hapi": "^17.2.0",
     "hapi-auth-basic": "^5.0.0",
+    "hapi-qs": "^2.0.0",
     "inert": "^5.1.0"
   },
   "devDependencies": {
