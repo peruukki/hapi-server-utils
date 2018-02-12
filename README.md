@@ -109,9 +109,9 @@ const { env } = require('hapi-server-utils');
 const apiHost = env('API_HOST', 'http://127.0.0.1:8080');
 ```
 
-## Linting
+## Testing
 
-There are no tests but you can lint the JavaScript with [ESLint](https://eslint.org/):
+Run basic tests and lint the JavaScript with [ESLint](https://eslint.org/):
 
 ```sh
 npm test

@@ -11,9 +11,13 @@
   },
   "scripts": {
     "lint": "eslint --fix .",
-    "test": "npm run lint"
+    "spec": "BASIC_AUTH_DISABLED=true mocha --recursive",
+    "test": "npm run lint && npm run spec"
   },
   "dependencies": {
+    "good": "^8.0.1",
+    "good-console": "^7.0.1",
+    "good-squeeze": "^5.0.2",
     "h2o2": "^8.0.0",
     "habitat": "^3.1.2",
     "hapi": "^17.2.0",
@@ -22,8 +26,11 @@
     "inert": "^5.1.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^5.0.0",
+    "supertest": "^3.0.0"
   }
 }
