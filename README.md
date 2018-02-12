@@ -9,7 +9,7 @@ The package is not in the npm registry (don’t think it’s general-purpose eno
 it from GitHub:
 
 ```sh
-npm install -S peruukki/hapi-server-utils#v1.0.1
+npm install -S peruukki/hapi-server-utils#v1.1.0
 ```
 
 ## Available methods
