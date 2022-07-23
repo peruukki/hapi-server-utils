@@ -1,6 +1,6 @@
 {
   "name": "hapi-server-utils",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Common utilities for hapi.js server applications",
   "private": true,
   "author": "Harri Lehtola <peruukki@hotmail.com>",
