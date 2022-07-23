@@ -1,7 +1,7 @@
 # hapi-server-utils
 
 This package contains some handy utility methods that I use in my [hapi.js](https://hapijs.com/)
-(v17) server applications.
+(v20) server applications.
 
 ## Installation
 
@@ -9,7 +9,7 @@ The package is not in the npm registry (don’t think it’s general-purpose eno
 it from GitHub:
 
 ```sh
-npm install -S peruukki/hapi-server-utils#v1.2.0
+npm install -S peruukki/hapi-server-utils#v2.0.0
 ```
 
 ## Available methods
@@ -17,9 +17,9 @@ npm install -S peruukki/hapi-server-utils#v1.2.0
 ### server(routes, config, defaultPort, [staticFilesDir])
 
 Starts a hapi.js server with Basic Authentication (using
-[hapi-auth-basic](https://github.com/hapijs/hapi-auth-basic)), serving static files (using
-[inert](https://github.com/hapijs/inert)) and request proxying (using
-[h2o2](https://github.com/hapijs/h2o2)).
+[@hapi/basic](https://github.com/hapijs/basic)), serving static files (using
+[@hapi/inert](https://github.com/hapijs/inert)) and request proxying (using
+[@hapi/h2o2](https://github.com/hapijs/h2o2)).
 
 Basic Authentication is enabled by default, but can be disabled by defining the environment variable
 `BASIC_AUTH_DISABLED=true`. If it is enabled, all requests are authenticated and access is allowed with
