@@ -13,6 +13,6 @@ describe('app', () => {
       .get('/')
       .expect(200)
       .expect('Content-Type', 'application/json; charset=utf-8')
-      .then(response => expect(response.body).to.eql(config));
+      .then((response) => expect(response.body).to.eql(config));
   });
 });
