@@ -47,7 +47,7 @@ const routes = require('./routes');
 
 const config = { apiHost: env('API_HOST', 'http://127.0.0.1:8081') };
 const staticFilesDir = path.join(__dirname, 'public');
-server(routes, config, '8080', staticFilesDir);
+server(routes, config, '8080', { staticFilesDir });
 ```
 
 ```javascript
