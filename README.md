@@ -14,7 +14,7 @@ npm install -S peruukki/hapi-server-utils#v2.0.0
 
 ## Available methods
 
-### server(routes, config, defaultPort, [staticFilesDir])
+### server(routes, config, defaultPort, [options])
 
 Starts a hapi.js server with Basic Authentication (using
 [@hapi/basic](https://github.com/hapijs/basic)), serving static files (using
@@ -28,10 +28,14 @@ the credentials from the environment variables `ADMIN_USERNAME` and `ADMIN_PASSW
 The server serves given `routes` and all route handlers are passed the hapi.js server instance and the given
 `config` value, see the example below.
 
-If `staticFilesDir` is passed, static files are served from that directory. Pass e.g.
-`path.join(__dirname, 'public')` if you have a top-level `public` directory.
-
 The server listens on port from the environment variable `PORT` or the given `defaultPort`.
+
+The optional `options` object can contain:
+
+- `loggingOptions`: additional [hapi-pino options](https://github.com/pinojs/hapi-pino#options)
+  to override the defaults
+- `staticFilesDir`: if given, static files are served from that directory. Pass e.g.
+  `path.join(__dirname, 'public')` if you have a top-level `public` directory.
 
 #### Example usage
 
@@ -63,7 +67,7 @@ module.exports = function routes(server, config) {
 };
 ```
 
-### app(routes, config, defaultPort, [staticFilesDir])
+### app(routes, config, defaultPort, [options])
 
 Similar to `server` but doesn't actually start a server, just returns the value from the `Hapi.server()` call.
 Useful in tests with e.g. [supertest](https://github.com/visionmedia/supertest).
